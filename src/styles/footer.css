@@ -2,31 +2,34 @@
     position: relative;
     display: flex;
     justify-content: center;
-    top: -204px;
     background: linear-gradient(to bottom, black 0%, 30%, #111111 100%);
     color: #fff;
+    top: -204px;
     padding: 40px 20px;
+    flex-direction: column; /* Para que se apilen en pantallas pequeñas */
 }
 
 .footer-container {
     display: flex;
+    flex-direction: column; /* Cambia la disposición en pantallas pequeñas */
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 30px ;
+    max-width: 800px;
+    text-align: center; /* Centra el contenido en pantallas pequeñas */
 }
 
 .footer-left {
     max-width: 400px;
+    margin: 30px 0;
 }
 
 .footer-left h3 {
     color: #FA653A;
-    margin-bottom: 10px;
 }
 
 .footer-right {
-    text-align: right;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .footer-right ul {
@@ -56,4 +59,22 @@
     font-size: 14px;
     border-top: 1px solid #333;
     padding-top: 10px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Dispone en columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        max-width: 100%; /* Asegura que tomen el 100% del ancho en pantallas pequeñas */
+        margin: 20px 0;
+    }
+
+    .footer-right li {
+        display: block;
+        margin: 10px 0;
+    }
 }
