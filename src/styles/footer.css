@@ -14,7 +14,6 @@
     flex-direction: column; /* Cambia la disposición en pantallas pequeñas */
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
     text-align: center; /* Centra el contenido en pantallas pequeñas */
 }
 
@@ -59,6 +58,7 @@
     font-size: 14px;
     border-top: 1px solid #333;
     padding-top: 10px;
+    
 }
 
 /* Media queries para pantallas pequeñas */
