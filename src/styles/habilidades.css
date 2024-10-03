@@ -1,0 +1,108 @@
+.habilidades {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white; 
+    top: -201px;
+    padding: 50px; 
+    text-align: center; 
+}
+
+.presentation_habilidades {
+    margin: 100px;
+}
+
+.habilidades_title {
+    font-size: 3.5rem; /* Tamaño del título */
+    margin-bottom: 50px; /* Espacio debajo del título */
+    color: #FA653A;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    width: 800px;
+}
+
+.portfolio-item {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center; 
+    color: white; 
+    transition: transform 0.3s; 
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); 
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 15px; /* Espacio entre habilidades */
+    margin-top: 10px; /* Espacio entre el título y las habilidades */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column; /* Colocar el icono encima del texto */
+    align-items: center; /* Centrar horizontalmente */
+    color: white; /* Color del texto */
+}
+
+.skill-icon {
+    font-size: 3rem; /* Tamaño del icono */
+    margin: 50px 20px 20px 20px; /* Espacio entre icono y texto */
+}
+
+/* Colores para los iconos */
+.html { color: #E34F26; } /* HTML */
+.css { color: #1572B6; } /* CSS */
+.js { color: #F7DF1E; } /* JavaScript */
+.react { color: #61DAFB; } /* React */
+.expo { color: #000020; } /* Expo */
+.tauri { color: #4F1B5F; } /* Tauri */
+.python { color: #306998; } /* Python */
+.django { color: #092E20; } /* Django */
+.sql { color: #003B57; } /* SQL */
+.firebase { color: #FFCA28; } /* Firebase */
+.mongodb { color: #47A248; } /* MongoDB */
+.github { color: #fff; } /* GitHub */
+.powerbi { color: #FFB748; } /* Power BI */
+.vscode { color: #007ACC; } /* Visual Studio Code */
+.docker { color: #2496ED; } /* Docker */
+
+@media (max-width: 768px) {
+    .habilidades_title {
+        font-size: 2.5rem; 
+        margin-bottom: 30px; 
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr; 
+        width: 100%; 
+    }
+
+    .skills {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    }
+
+    .skill-icon {
+        font-size: 2rem; 
+        margin: 20px 10px 10px 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .habilidades_title {
+        font-size: 2rem; 
+    }
+
+    .skill-icon {
+        font-size: 2rem; 
+    }
+}
