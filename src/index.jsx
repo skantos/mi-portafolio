@@ -28,7 +28,7 @@ function Index() {
                 <Habilidades />
             </section>
 
-            <section className="contact">
+            <section className="contact" id="contact">
                 <Contacto />
             </section>
             

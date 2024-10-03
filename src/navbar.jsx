@@ -56,9 +56,9 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                    <a href="/contact" className="btn-contact" title="Contact">
+                    <Link to="contact" smooth={true} duration={500} className="btn-contact" title="Contact">
                         <h4>contacto</h4>
-                    </a>
+                    </Link>
             </div>
         </nav>
     );
