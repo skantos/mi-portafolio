@@ -22,29 +22,22 @@ function Index() {
                         mis proyectos.
                     </p>
 
-                    <div className="social-links">
-                        <ul className="example-2">
-                            <li className="icon-content">
-                                <a href="https://github.com/skantos" target="_blank" rel="noopener noreferrer" >
-                                    <FaGithub className='social-icon' size={30} />
-                                </a>
-                                <div className="tooltip">Github</div>
-                            </li>
-
-                            <li className="icon-content">
-                                <a href="https://www.linkedin.com/in/samuel-gajardos/" target="_blank" rel="noopener noreferrer">
-                                    <FaLinkedin className='social-icon' size={30} />
-                                </a>
-                                <div className="tooltip">Linkedin</div>
-                            </li>
-                            <li className="icon-content">
-                                <a href="https://wa.me/56997731366" target="_blank" rel="noopener noreferrer">
-                                    <FaWhatsapp className='social-icon' size={30} />
-                                </a>
-                                <div className="tooltip">WhatsApp</div>
-                            </li>
-                        </ul>
-
+                    <div className="social-links example-2">
+                        <div className="icon-content">
+                            <a href="https://github.com/skantos" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaGithub size={30} />
+                            </a>
+                        </div>
+                        <div className="icon-content">
+                            <a href="https://www.linkedin.com/in/samuel-gajardos/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaLinkedin size={30} />
+                            </a>
+                        </div>
+                        <div className="icon-content">
+                            <a href="https://wa.me/56997731366" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaWhatsapp size={30} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -59,6 +52,10 @@ function Index() {
             <section className="contact" id="contact">
                 <Contacto />
             </section>
+
+            <footer>
+
+            </footer>
             
         </div>
     );

@@ -50,7 +50,7 @@ return (
         </div>
 
         <div className="field">
-            <label>Electrónico:</label>
+            <label>Correo:</label>
             <input
                 className="input-field "
                 type="email"
