@@ -78,6 +78,7 @@
     height: 100%;
     width: 100%;
     color: #d3d3d3;
+    resize: none;
   }
   .label_msj{
     height: 100%;

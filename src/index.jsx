@@ -3,6 +3,8 @@ import Navbar from "./navbar";
 import Habilidades from "./section/habilidades"
 import Contacto from "./section/contacto"
 
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'; // Importa los íconos
+
 import "./styles/index.css";
 import "./styles/habilidades.css";
 
@@ -19,8 +21,34 @@ function Index() {
                         gestión de bases de datos y desarrollo web. Aquí puedes explorar algunos de
                         mis proyectos.
                     </p>
+
+                    <div className="social-links">
+                        <ul className="example-2">
+                            <li className="icon-content">
+                                <a href="https://github.com/skantos" target="_blank" rel="noopener noreferrer" >
+                                    <FaGithub className='social-icon' size={30} />
+                                </a>
+                                <div className="tooltip">Github</div>
+                            </li>
+
+                            <li className="icon-content">
+                                <a href="https://www.linkedin.com/in/samuel-gajardos/" target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedin className='social-icon' size={30} />
+                                </a>
+                                <div className="tooltip">Linkedin</div>
+                            </li>
+                            <li className="icon-content">
+                                <a href="https://wa.me/56997731366" target="_blank" rel="noopener noreferrer">
+                                    <FaWhatsapp className='social-icon' size={30} />
+                                </a>
+                                <div className="tooltip">WhatsApp</div>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
             </section>
+
             <div className="cortina_degrade">
             </div> 
 
