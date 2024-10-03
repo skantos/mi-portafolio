@@ -5,7 +5,7 @@ import Index from './index';
 import Habilidades from './section/habilidades';
 import Contacto from './section/contacto';
 import Experiencia from './section/experiencia';
-import Footer from './section/Footer';
+import Footer from './section/footer';
 
 
 function App() {
