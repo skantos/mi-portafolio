@@ -8,7 +8,6 @@ import Footer from "./section/footer"
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'; // Importa los íconos
 
 import "./styles/index.css";
-import "./styles/habilidades.css";
 
 function Index() {
     return (
