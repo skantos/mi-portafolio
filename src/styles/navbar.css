@@ -112,6 +112,9 @@
         flex-direction: column; /* Cambiar a columna */
         display: none; /* Ocultar el menú por defecto */
     }
+    .btn-contact {
+        display: none;
+    }
 
     .menu.open {
         display: flex; /* Mostrar el menú si está abierto */
