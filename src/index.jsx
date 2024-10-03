@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./navbar";
 import Habilidades from "./section/habilidades"
 import Contacto from "./section/contacto"
+import Experiencia from "./section/experiencia"
+import Footer from "./section/footer"
 
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'; // Importa los íconos
 
@@ -49,12 +51,16 @@ function Index() {
                 <Habilidades />
             </section>
 
+            <section className="experiencia" id="experiencia">
+                <Experiencia />
+            </section>
+
             <section className="contact" id="contact">
                 <Contacto />
             </section>
 
-            <footer>
-
+            <footer class="footer">
+                <Footer />
             </footer>
             
         </div>

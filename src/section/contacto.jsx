@@ -34,7 +34,7 @@ const handleSubmit = (e) => {
 return (
     <div>
         <div className="presentation_habilidades">
-            <h1 className="habilidades_title">contact </h1>
+            <h1 className="habilidades_title">Contacto </h1>
         </div>    
     <form className="formulario" ref={form} onSubmit={handleSubmit}>
         <p id="heading">Contacta directamente conmigo</p>

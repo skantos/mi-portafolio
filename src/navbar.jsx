@@ -50,9 +50,9 @@ export default function Navbar() {
                         </Link>
                     </div>
                     <div className="nav-icon" title="Experiencia">
-                        <a href="/">
+                        <Link to="experiencia" smooth={true} duration={500} onClick={toggleMenu}>
                             <FaClipboardList className='icono_nav' size={24} />
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
