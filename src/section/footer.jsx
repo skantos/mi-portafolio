@@ -19,12 +19,12 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/samuel-gajardos/" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-linkedin"></i> LinkedIn
                             </a>
                         </li>
                         <li>
-                            <a href="https://wa.me/tu-número" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/56997731366" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-whatsapp"></i> WhatsApp
                             </a>
                         </li>
