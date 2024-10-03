@@ -1,0 +1,100 @@
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white; 
+    top: -201px;
+    padding: 50px; 
+    text-align: center; 
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+}
+.formulario:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+}
+
+#heading {
+    text-align: center;
+    margin: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    margin: 10px 0;
+  }
+
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+  }
+
+  .field_msj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    margin: 10px 0;
+  }
+
+  .input_msj{
+    background: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    color: #d3d3d3;
+  }
+  .label_msj{
+    height: 100%;
+  }
+  
+  .enviar {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+  }
+  
+  .enviar:hover {
+    background-color: #FA653A;
+    color: white;
+  }

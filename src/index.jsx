@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./navbar";
 import Habilidades from "./section/habilidades"
+import Contacto from "./section/contacto"
+
 import "./styles/index.css";
 import "./styles/habilidades.css";
 
@@ -24,6 +26,10 @@ function Index() {
 
             <section className="habilidades" id="habilidades">
                 <Habilidades />
+            </section>
+
+            <section className="contact">
+                <Contacto />
             </section>
             
         </div>

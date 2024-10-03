@@ -57,7 +57,7 @@ export default function Navbar() {
                 </div>
 
                     <a href="/contact" className="btn-contact" title="Contact">
-                        <FaEnvelope size={24} />
+                        <h4>contacto</h4>
                     </a>
             </div>
         </nav>
