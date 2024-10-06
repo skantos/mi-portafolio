@@ -7,6 +7,7 @@
     top: -203px;
     padding: 50px; 
     text-align: center; 
+    z-index: 20;
 }
 
 .formulario {
