@@ -32,6 +32,7 @@
     font-size: 1.25rem;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Estilos para el menú y su visibilidad */
@@ -56,28 +57,14 @@
     position: relative;
     display: inline-block;
     color: #d1d5db;
-    transition: color 0.3s ease;
     cursor: pointer; 
-
 }
 
 .nav-icon:hover {
     color: white;
+    border-bottom: 2px solid #f97316;
 }
 
-.nav-icon:hover::after {
-    content: attr(title);
-    position: absolute;
-    bottom: 100%; /* Position above the icon */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: black;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    white-space: nowrap;
-    z-index: 10;
-}
 
 .btn-contact {
     background-color: #f97316;
@@ -86,6 +73,7 @@
     border-radius: 9999px;
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 

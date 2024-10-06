@@ -29,9 +29,9 @@ export default function Navbar() {
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container">
                 <div className="logo">
-                    <a href="/" className="text-white font-semibold text-lg">
+                    <Link to="home" className="text-white font-semibold text-lg" smooth={true} duration={500} onClick={toggleMenu}>
                         Samuel Gajardo
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="menu-icon" onClick={toggleMenu}> {/* Botón de menú */}
@@ -39,24 +39,23 @@ export default function Navbar() {
                 </div>
 
                 <div className={`menu ${isOpen ? 'open' : ''}`}> {/* Menú desplegable */}
-                    <div className="nav-icon" title="Home">
+                    <div className="nav-icon">
                         <Link to="home" smooth={true} duration={500} onClick={toggleMenu}>
-                            <FaHome className='icono_nav' size={24} />
+                            <samp>Inicio</samp>                        
                         </Link>
                     </div>
-                    <div className="nav-icon" title="Habilidades">
+                    <div className="nav-icon">
                         <Link to="habilidades" smooth={true} duration={500} onClick={toggleMenu}>
-                            <FaUserCog className='icono_nav' size={24} />
+                            <samp>Habilidades</samp>                        
                         </Link>
                     </div>
-                    <div className="nav-icon" title="Experiencia">
+                    <div className="nav-icon">
                         <Link to="experiencia" smooth={true} duration={500} onClick={toggleMenu}>
-                            <FaClipboardList className='icono_nav' size={24} />
+                            <samp>Experiencia</samp>
                         </Link>
                     </div>
                 </div>
-
-                    <Link to="contact" smooth={true} duration={500} className="btn-contact" title="Contact">
+                    <Link to="contact" smooth={true} duration={500} className="btn-contact">
                         <h4>contacto</h4>
                     </Link>
             </div>

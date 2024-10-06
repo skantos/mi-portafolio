@@ -6,9 +6,7 @@ import Habilidades from "./section/habilidades";
 import Contacto from "./section/contacto";
 import Experiencia from "./section/experiencia";
 import Footer from "./section/footer";
-
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-
 import "./styles/index.css";
 
 function Index() {
@@ -19,7 +17,8 @@ function Index() {
     return (
         <div className="app">
             <Navbar />
-                <Particles
+            <section className="content_body" id="home">
+            <Particles
                     id="tsparticles"
                     init={particlesInit}
                     options={{
@@ -31,20 +30,9 @@ function Index() {
                         fpsLimit: 120,
                         interactivity: {
                             events: {
-                                onClick: {
-                                    enable: true,
-                                    mode: "push",
-                                },
-                                onHover: {
-                                    enable: true,
-                                    mode: "repulse",
-                                },
                                 resize: true,
                             },
                             modes: {
-                                push: {
-                                    quantity: 4,
-                                },
                                 repulse: {
                                     distance: 200,
                                     duration: 0.4,
@@ -53,13 +41,13 @@ function Index() {
                         },
                         particles: {
                             color: {
-                                value: "#ffffff",
+                                value: "#FA653A",
                             },
                             links: {
                                 color: "#ffffff",
                                 distance: 150,
                                 enable: true,
-                                opacity: 0.5,
+                                opacity: 0.2,
                                 width: 1,
                             },
                             move: {
@@ -75,12 +63,12 @@ function Index() {
                             number: {
                                 density: {
                                     enable: true,
-                                    area: 800,
+                                    area: 1000,
                                 },
                                 value: 80,
                             },
                             opacity: {
-                                value: 0.5,
+                                value: 0.2,
                             },
                             shape: {
                                 type: "circle",
@@ -91,8 +79,8 @@ function Index() {
                         },
                         detectRetina: true,
                     }}
+                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0 }} // Asegúrate que las partículas están en el fondo
                 />
-            <section className="content_body" id="home">
                 <div className="presentation">
                     <h1 className="presentation-title">Hola, soy Samuel Gajardo</h1>
                     <p className="presentation-description">
@@ -100,7 +88,6 @@ function Index() {
                         gestión de bases de datos y desarrollo web. Aquí puedes explorar algunos de
                         mis proyectos.
                     </p>
-
                     <div className="social-links example-2">
                         <div className="icon-content">
                             <a href="https://github.com/skantos" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -120,21 +107,16 @@ function Index() {
                     </div>
                 </div>
             </section>
-
             <div className="cortina_degrade"></div> 
-
             <section className="habilidades" id="habilidades">
                 <Habilidades />
             </section>
-
             <section className="experiencia" id="experiencia">
                 <Experiencia />
             </section>
-
             <section className="contact" id="contact">
                 <Contacto />
             </section>
-
             <footer className="footer">
                 <Footer />
             </footer>
