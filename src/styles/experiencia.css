@@ -9,6 +9,9 @@
     text-align: center; 
     z-index: 20;
 }
+a {
+    text-decoration: none;
+}
 
 .bento-container {
     display: grid;
