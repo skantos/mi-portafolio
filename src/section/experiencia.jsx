@@ -14,8 +14,12 @@ function experiencia() {
             <div className="bento-item large">
                 <div className="bento-background"></div>
                 <div className="bento-content">
-                    <h2>Elemento Grande</h2>
-                    <p>Este es un elemento grande en nuestro diseño bento.</p>
+                    <h2>Estudios</h2>
+                    <br />
+                    <p>4 años de formación profesional como ingeniero informático <br />
+                    en el instituto Inacap Maipú.</p>
+                    <br />
+                    <h4>2021-2024</h4>
                 </div>
             </div>
 
@@ -23,7 +27,8 @@ function experiencia() {
                 <a href="https://ppokedex-api-app.netlify.app/">
                     <div className="bento-background"></div>
                     <div className="bento-content">
-                        <h3>Pokedex</h3>
+                        <h3>Pokédex</h3>
+                        <br />
                         <p>pokedex realizada con <br /> la api pokemon</p>
                         <FaJs className="skill js" />
                         <FaHtml5 className="skill html" />
