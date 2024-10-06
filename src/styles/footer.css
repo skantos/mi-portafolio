@@ -7,8 +7,6 @@
     top: -204px;
     padding: 40px 20px;
     flex-direction: column; /* Para que se apilen en pantallas pequeñas */
-    z-index: 20;
-
 }
 
 .footer-container {
