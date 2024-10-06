@@ -11,99 +11,78 @@
 
 }
 
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-
-
-
-.wrapper {
-    width: 200px;
-    height: 60px;
+.bento-item {
     position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #FA653A;
+}
 
+.bento-item:hover {
+    transform: translateY(-5px);
+}
+
+.bento-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+}
+
+.bento-content {
+    position: relative;
     z-index: 1;
+    padding: 20px;
+    color: white;
 }
 
-.circle {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: #fff;
-    left: 15%;
-    transform-origin: 50%;
-    animation: circle7124 .5s alternate infinite ease;
+.bento-item h2, .bento-item h3 {
+    margin-top: 0;
 }
 
-@keyframes circle7124 {
-    0% {
-    top: 60px;
-    height: 5px;
-    border-radius: 50px 50px 25px 25px;
-    transform: scaleX(1.7);
+.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+/* Asignar imágenes de fondo específicas a cada elemento */
+.bento-item:nth-child(1) .bento-background { background-image: url('../assets/pikachu.gif'); }
+.bento-item:nth-child(2) .bento-background { background-image: url('ruta/a/tu/imagen2.jpg'); }
+.bento-item:nth-child(3) .bento-background { background-image: url('ruta/a/tu/imagen3.jpg'); }
+.bento-item:nth-child(4) .bento-background { background-image: url('ruta/a/tu/imagen4.jpg'); }
+.bento-item:nth-child(5) .bento-background { background-image: url('ruta/a/tu/imagen5.jpg'); }
+
+@media (max-width: 768px) {
+    .bento-container {
+    grid-template-columns: 1fr;
     }
 
-    40% {
-    height: 20px;
-    border-radius: 50%;
-    transform: scaleX(1);
+    .large, .wide, .tall {
+    grid-column: auto;
+    grid-row: auto;
     }
-
-    100% {
-    top: 0%;
-    }
-}
-
-.circle:nth-child(2) {
-    left: 45%;
-    animation-delay: .2s;
-}
-
-.circle:nth-child(3) {
-    left: auto;
-    right: 15%;
-    animation-delay: .3s;
-}
-
-.shadow {
-    width: 20px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: rgba(255, 251, 251, 0.9);
-    position: absolute;
-    top: 62px;
-    transform-origin: 50%;
-    z-index: -1;
-    left: 15%;
-    filter: blur(1px);
-    animation: shadow046 .5s alternate infinite ease;
-}
-
-@keyframes shadow046 {
-    0% {
-    transform: scaleX(1.5);
-    }
-
-    40% {
-    transform: scaleX(1);
-    opacity: .7;
-    }
-
-    100% {
-    transform: scaleX(.2);
-    opacity: .4;
-    }
-}
-
-.shadow:nth-child(4) {
-    left: 45%;
-    animation-delay: .2s
-}
-
-.shadow:nth-child(5) {
-    left: auto;
-    right: 15%;
-    animation-delay: .3s;
 }
