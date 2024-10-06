@@ -27,7 +27,7 @@
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background-color: #FA653A;
+    background-color: #DB3131;
 }
 
 .bento-item:hover {
@@ -52,6 +52,11 @@
     color: white;
 }
 
+.skill{
+    font-size: 2rem; 
+    margin: 50px 15px 10px 15px;
+}
+
 .bento-item h2, .bento-item h3 {
     margin-top: 0;
 }
@@ -71,7 +76,7 @@
 
 /* Asignar imágenes de fondo específicas a cada elemento */
 .bento-item:nth-child(1) .bento-background { background-image: url('../assets/pikachu.gif'); }
-.bento-item:nth-child(2) .bento-background { background-image: url('../assets/pikachu.gif'); }
+.bento-item:nth-child(2) .bento-background { background-image: url('../assets/pokeball.gif'); }
 .bento-item:nth-child(3) .bento-background { background-image: url('../assets/pikachu.gif'); }
 .bento-item:nth-child(4) .bento-background { background-image: url('../assets/pikachu.gif'); }
 .bento-item:nth-child(5) .bento-background { background-image: url('../assets/pikachu.gif'); }
