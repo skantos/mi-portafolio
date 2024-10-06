@@ -20,6 +20,7 @@
     background-color: #171717;
     border-radius: 25px;
     transition: .4s ease-in-out;
+    margin: 0px 20px 0px 20px;
 }
 .formulario:hover {
     transform: scale(1.05);

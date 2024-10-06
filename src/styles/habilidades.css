@@ -25,6 +25,7 @@
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     width: 800px;
+    padding: 20px;
 }
 
 .portfolio-item {
@@ -86,6 +87,7 @@
     .portfolio-grid {
         grid-template-columns: 1fr; 
         width: 100%; 
+        padding: 20px;
     }
 
     .skills {
