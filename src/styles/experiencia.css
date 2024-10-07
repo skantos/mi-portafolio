@@ -79,9 +79,9 @@ a {
 /* Asignar imágenes de fondo específicas a cada elemento */
 .bento-item:nth-child(1) .bento-background { background-image: url('../assets/inacap.png'); }
 .bento-item:nth-child(2) .bento-background { background-image: url('../assets/pokeball.gif'); }
-.bento-item:nth-child(3) .bento-background { background-image: url('../assets/loading.gif'); }
-.bento-item:nth-child(4) .bento-background { background-image: url('../assets/loading.gif'); }
-.bento-item:nth-child(5) .bento-background { background-image: url('../assets/loading.gif'); }
+.bento-item:nth-child(3) .bento-background { background-image: url('../assets/pikachu.gif'); }
+.bento-item:nth-child(4) .bento-background { background-image: url('../assets/pikachu.gif'); }
+.bento-item:nth-child(5) .bento-background { background-image: url('../assets/pikachu.gif'); }
 
 @media (max-width: 768px) {
     .bento-container {
