@@ -19,7 +19,7 @@ a {
     grid-auto-rows: minmax(150px, auto);
     gap: 20px;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -59,6 +59,26 @@ a {
     margin: 50px 15px 10px 15px;
 }
 
+.bento-content a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+.bento-content button {
+    background-color: #FF5722; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Tamaño del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor a pointer al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave en el color */
+    font-size: 1rem; /* Tamaño del texto */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+}
+
+.bento-content button:hover {
+    background-color: #E64A19; /* Color de fondo al pasar el mouse */
+}
+
 .bento-item h2, .bento-item h3 {
     margin-top: 0;
 }
@@ -79,7 +99,7 @@ a {
 /* Asignar imágenes de fondo específicas a cada elemento */
 .bento-item:nth-child(1) .bento-background { background-image: url('../assets/inacap.png'); }
 .bento-item:nth-child(2) .bento-background { background-image: url('../assets/pokeball.gif'); }
-.bento-item:nth-child(3) .bento-background { background-image: url('../assets/pikachu.gif'); }
+.bento-item:nth-child(3) .bento-background { background-image: url('../assets/store.gif'); }
 .bento-item:nth-child(4) .bento-background { background-image: url('../assets/pikachu.gif'); }
 .bento-item:nth-child(5) .bento-background { background-image: url('../assets/pikachu.gif'); }
 

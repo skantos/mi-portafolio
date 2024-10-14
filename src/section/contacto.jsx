@@ -12,14 +12,12 @@ const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
 
-    // Cambia 'YOUR_PUBLIC_KEY' por tu clave pública real
     emailjs.sendForm('service_p2gpwxf', 'template_84pv9jl', form.current, {
     publicKey: 'leWBvDwj56jFP2b_I',
     })
     .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setSuccess(true);
-        // Reinicia el formulario
         form.current.reset();
     })
     .catch((err) => {

@@ -10,6 +10,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import "./styles/index.css";
 
 function Index() {
+    
     const particlesInit = useCallback(async (engine) => {
         await loadSlim(engine);
     }, []);
@@ -107,6 +108,8 @@ function Index() {
                     </div>
                 </div>
             </section>
+
+            
             <div className="cortina_degrade"></div> 
             <section className="habilidades" id="habilidades">
                 <Habilidades />

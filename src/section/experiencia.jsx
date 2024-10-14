@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/experiencia.css";
 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaDatabase, FaGithub, FaDocker, FaCode } from "react-icons/fa";
+import { SiExpo, SiTauri, SiDjango, SiFirebase, SiMongodb, SiPowerbi } from "react-icons/si";
 
 function experiencia() {
     return (
@@ -37,21 +38,34 @@ function experiencia() {
                 </a>
             </div>
 
-            <div className="bento-item">
+            <div className="bento-item tall">
                 <div className="bento-background"></div>
                 <div className="bento-content">
-                    <h3>Elemento 2</h3>
-                    <p>Otro contenido corto.</p>
+                    <h3>Minimarket</h3>
+                    <br />
+                    <p>Aplicacion de Minimarket creada para una pyme. usuario de prueba <br />
+                        <br />nombre: user@gmail.com
+                        <br />contraseña: user123
+                        <br />
+                    </p> 
+                    <FaJs className="skill js" />
+                    <SiFirebase className="skill firebase" />
+                    <FaReact className="skill react" />
+                    <SiTauri className="skill tauri" />
+                    <br />
+                    <a href="../assets/montino-app_0.1.0_x64_en-US.msi" download>
+                        <button>Descargar</button>
+                    </a>                
                 </div>
             </div>
 
-            <div className="bento-item">
+            {/* <div className="bento-item">
                 <div className="bento-background"></div>
                 <div className="bento-content">
                     <h3>Elemento 3</h3>
                     <p>Más contenido aquí.</p>
                 </div>
-            </div>
+            </div> */}
 
             <div className="bento-item wide">
                 <div className="bento-background"></div>
