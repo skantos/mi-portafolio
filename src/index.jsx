@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import Navbar from "./navbar";
@@ -8,6 +8,7 @@ import Experiencia from "./section/experiencia";
 import Footer from "./section/footer";
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import "./styles/index.css";
+import TagCloud from "TagCloud"; // Asegúrate de que la ruta de importación sea correcta
 
 function Index() {
     
@@ -15,11 +16,39 @@ function Index() {
         await loadSlim(engine);
     }, []);
 
+    useEffect(() => {
+        // Definir las palabras para el TagCloud
+        const words = [
+            "Desarrollador",
+            "Aplicaciones",
+            "Web",
+            "Bases de Datos",
+            "React",
+            "Node.js",
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "Firebase",
+            "Tauri",
+            "Machine Learning"
+        ];
+        
+        // Crear el TagCloud
+        TagCloud("#tag-cloud", words, {
+            // Opciones del TagCloud
+            radius: 100, // Radio en píxeles
+            maxSpeed: "normal", // "normal", "fast", "slow"
+            initSpeed: "normal", // "normal", "fast", "slow"
+            direction: 135, // Dirección de la nube
+            keep: true, 
+        });
+    }, []);
+
     return (
         <div className="app">
             <Navbar />
             <section className="content_body" id="home">
-            <Particles
+                <Particles
                     id="tsparticles"
                     init={particlesInit}
                     options={{
@@ -84,11 +113,15 @@ function Index() {
                 />
                 <div className="presentation">
                     <h1 className="presentation-title">Hola, soy Samuel Gajardo</h1>
+
+                    <div id="tag-cloud"></div>
+
                     <p className="presentation-description">
                         Soy un ingeniero informático apasionado por el desarrollo de aplicaciones,
                         gestión de bases de datos y desarrollo web. Aquí puedes explorar algunos de
                         mis proyectos.
                     </p>
+                    
                     <div className="social-links example-2">
                         <div className="icon-content">
                             <a href="https://github.com/skantos" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -109,7 +142,6 @@ function Index() {
                 </div>
             </section>
 
-            
             <div className="cortina_degrade"></div> 
             <section className="habilidades" id="habilidades">
                 <Habilidades />
