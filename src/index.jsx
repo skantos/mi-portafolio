@@ -36,7 +36,7 @@ function Index() {
         // Crear el TagCloud
         TagCloud("#tag-cloud", words, {
             // Opciones del TagCloud
-            radius: 100, // Radio en píxeles
+            radius: 120, // Radio en píxeles
             maxSpeed: "normal", // "normal", "fast", "slow"
             initSpeed: "normal", // "normal", "fast", "slow"
             direction: 135, // Dirección de la nube
@@ -114,29 +114,34 @@ function Index() {
                 <div className="presentation">
                     <h1 className="presentation-title">Hola, soy Samuel Gajardo</h1>
 
-                    <div id="tag-cloud"></div>
+                    <div className="columns">
+                        <div className="text-column">
+                            <p className="presentation-description">
+                                Soy un ingeniero informático apasionado por el desarrollo de aplicaciones,                               
+                                gestión de bases de datos y desarrollo web. Aquí puedes explorar algunos de
+                                mis proyectos.
+                            </p>
 
-                    <p className="presentation-description">
-                        Soy un ingeniero informático apasionado por el desarrollo de aplicaciones,
-                        gestión de bases de datos y desarrollo web. Aquí puedes explorar algunos de
-                        mis proyectos.
-                    </p>
-                    
-                    <div className="social-links example-2">
-                        <div className="icon-content">
-                            <a href="https://github.com/skantos" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaGithub size={30} />
-                            </a>
+                            <div className="social-links example-2">
+                                <div className="icon-content">
+                                    <a href="https://github.com/skantos" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                        <FaGithub size={30} />
+                                    </a>
+                                </div>
+                                <div className="icon-content">
+                                    <a href="https://www.linkedin.com/in/samuel-gajardos/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                        <FaLinkedin size={30} />
+                                    </a>
+                                </div>
+                                <div className="icon-content">
+                                    <a href="https://wa.me/56997731366" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                        <FaWhatsapp size={30} />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div className="icon-content">
-                            <a href="https://www.linkedin.com/in/samuel-gajardos/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaLinkedin size={30} />
-                            </a>
-                        </div>
-                        <div className="icon-content">
-                            <a href="https://wa.me/56997731366" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaWhatsapp size={30} />
-                            </a>
+                        <div className="tag-column">
+                            <div id="tag-cloud"></div>
                         </div>
                     </div>
                 </div>

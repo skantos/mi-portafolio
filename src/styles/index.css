@@ -53,19 +53,22 @@
     justify-content: center; 
     margin: 0 auto; 
     height: 100%; 
+    max-width: 900px;
     z-index: 3 !important;
 }
 
 .presentation-title {
     font-size: 3.5rem; /* Tamaño del título */
-    margin-bottom: 50px; /* Espacio debajo del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
     color: #FA653A;
+    text-align: center; /* Centra el texto */
 }
 
 .presentation-description {
     font-size: 1.2rem;
-    max-width: 600px; 
-    text-align: center; 
+    max-width: 450px; 
+    text-align: left; 
+    margin-top: 25px;
     color: #fff;
 }
 
@@ -130,6 +133,49 @@
 
 
 #tag-cloud {
-    color: #fff;
+    color: #FA653A;
+    text-align: center; /* Centra el TagCloud */
+    margin: 10px ; /* Espacio superior e inferior */
     z-index: 200;
+}
+
+.columns {
+    display: flex; /* Usa flexbox para crear columnas */
+    justify-content: center; /* Centra las columnas */
+    align-items: flex-start; /* Alinea las columnas al inicio */
+    margin-top: 20px; /* Espacio superior */
+}
+
+
+.tag-column {
+    flex: 1; /* Toma el 50% del ancho (ajusta según sea necesario) */
+    display: flex; /* Permite centrar el contenido en la columna */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.text-column {
+    flex: 1; /* Toma el 50% del ancho (ajusta según sea necesario) */
+    display: flex; 
+    flex-direction: column; /* Organiza el texto verticalmente */
+}
+
+@media (max-width: 768px) {
+    .presentation-title{
+        margin-top: 150px;
+    }
+    .presentation-description {
+        text-align: center; 
+    }
+    
+    .columns {
+        flex-direction: column; /* Cambia a una sola columna en pantallas pequeñas */
+        align-items: center; /* Centra el contenido horizontalmente */
+    }
+
+    .tag-column, .text-column {
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 20px; /* Espacio inferior entre las columnas */
+        flex: none; /* Permite que cada columna use el ancho completo */
+        width: 100%; /* Asegura que cada columna ocupe el ancho completo */
+    }
 }
